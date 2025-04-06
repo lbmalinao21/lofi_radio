@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback - Lo-Fi Vibe Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="feedback">
+<div class="blur-bg"></div>
+    <div class="container">
+        <h1>💬 We Value Your Feedback!</h1>
+        <p>How was your experience with our Lo-Fi Vibe Generator?</p>
+
+        <form method="POST">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" />
+            </div>
+
+            <div class="form-group">
+                <label for="satisfaction">Overall Satisfaction:</label>
+                <select id="satisfaction" name="satisfaction" required>
+                    <option value="Very Satisfied">Very Satisfied</option>
+                    <option value="Satisfied">Satisfied</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Dissatisfied">Dissatisfied</option>
+                    <option value="Very Dissatisfied">Very Dissatisfied</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Any thoughts?" rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="button">Submit Feedback</button>
+            </div>
+        </form>
+
+        <a href="{{ url_for('vibe') }}" class="button secondary">Back to Vibes 🎶</a>
+    </div>
+</body>
+</html>

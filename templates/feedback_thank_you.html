@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You - Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="thank-you">
+<div class="blur-bg"></div>
+    <div class="container">
+        <h1>Thank You for Your Feedback, {{ name }}!</h1>
+        <p>Your response helps us improve the Lo-Fi Vibe Generator!</p>
+        <a href="{{ url_for('index') }}" class="button">Back to Home 🏠</a>
+    </div>
+</body>
+</html>
