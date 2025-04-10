@@ -1,5 +1,6 @@
 # 🎧 Lo-Fi Vibe Generator 🎵
 A chill and minimalist web app built with Flask
+mahal kong ina
 
 ## 📌 Project Description
 The **Lo-Fi Vibe Generator** is a simple, Flask-based web application that plays a curated list of lo-fi tracks in a loop. It provides users with a relaxed experience through a collection of chill beats and offers an intuitive interface for feedback submission. Designed with responsive UI and sleek aesthetic, this project demonstrates core Flask web development and deployment skills.
